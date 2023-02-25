@@ -1,0 +1,120 @@
+/*HTML*/
+html{
+    font-size: 62.5%
+}
+/*--------------------------------*/
+/*FUENTES*/
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & display=swap'); /*font-family: 'Bebas Neue', cursive;*/
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:wght@300 & display=swap'); /*font-family: 'Open Sans', sans-serif;*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*LOGOTIPO*/
+.tamañoLogotipo{
+    width: 20vw;
+}
+.separacion{
+    margin-left: 3em;
+}
+/*--------------------------------*/
+/*INICIO-NOSOTROS-TENDENCIAS-SUCURSALES-CONTACTOS*/
+.fuenteNavegacion{
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.7rem;
+
+}
+.items{
+     border: black .1rem ridge;
+     margin: 1em;
+     border-radius: 10%;
+}
+.items :hover{
+    color: white;
+}
+.fixed{
+    position: fixed;
+    z-index: 9999;
+}
+/*--------------------------------*/
+
+/*FONDO DE CADA SECCION*/
+.fondoSeccion{
+    background-color: rgba(63, 47, 47, 0.3);
+}
+/*-----------------------------------------------*/
+/*FOOTER*/
+.tamañoRedes{
+    width: 2.5vw;
+    height: 2.5vw;
+    margin: 1em 2em 1em 2em;
+}
+.derechos{
+    margin: auto;
+    font-size: 1.6rem;
+}
+
+/*-----------------------------------------------------*/
+/*Whatsapp*/
+.botonWhatsApp img {
+    width: 5vw;
+    height: 5vw;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+/*----------------------------------------------------*/
+/*Carousel y relleno de pagina*/
+.carousel{
+    height: 60vh;
+    width: auto;
+    object-fit: contain;
+}
+
+.fuentePagina{
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(139, 59, 139);
+    
+
+}
+ .fuenteBella{
+    color: violet;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: -3px -3px 0 rgb(0, 0, 0);
+}
+.fuenteBella h1{
+    font-size: 5rem;
+}
+.contenedor-section {
+    max-width: 90vw;
+  }
+  
+  .contenedor-section p {
+    word-wrap: break-word;
+  }
+/*-----------------------------------------------------------------------------------------------------------*/
+/*TENDENCIAS*/
+/*IMAGENES*/
+
+.imagenUñas{
+    width: auto;
+    height: 50vh;
+    object-fit: cover;
+}
+.boton{
+    border: solid 1px violet;
+    border-radius: 10%;
+    margin-left: 100%;
+    margin-right: 100%;
+}
+.boton a{
+    color: rgb(175, 54, 175);
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+
+}
+.descrip{
+    color: rgb(167, 27, 167);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+}
