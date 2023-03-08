@@ -1,70 +1,85 @@
 /*HTML*/
-html{
+html {
     font-size: 62.5%
 }
+
 /*--------------------------------*/
 /*FUENTES*/
-@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & display=swap'); /*font-family: 'Bebas Neue', cursive;*/
-@import url('https://fonts.googleapis.com/css2? family= Open+Sans:wght@300 & display=swap'); /*font-family: 'Open Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & display=swap');
+/*font-family: 'Bebas Neue', cursive;*/
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:wght@300 & display=swap');
+
+/*font-family: 'Open Sans', sans-serif;*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /*LOGOTIPO*/
-.tamañoLogotipo{
+.tamañoLogotipo {
     width: 20vw;
 }
-.separacion{
+
+.separacion {
     margin-left: 3em;
 }
+
 /*--------------------------------*/
 /*INICIO-NOSOTROS-TENDENCIAS-SUCURSALES-CONTACTOS*/
-
 /*-----------------------------------------------------------------*/
-.navegadorA{
+.navegador {
+
+    padding-left: 40px;
+    padding-bottom: 1px;
+
+}
+
+.navegadorA {
+
     position: relative;
     text-decoration: none;
-    color: #222;
     font-size: 18px;
     letter-spacing: .5px;
-    padding: 0 20px;
-    cursor: pointer;
 }
 
-.navegadorA :before, .navegadorA :after{
+.navegadorA :before,
+.navegadorA :after {
     content: "";
     position: absolute;
-    height: 1px;
+    height: 5px;
     width: 0px;
     background-color: rgb(253, 76, 130);
-    transition: .6s;   
+    transition: .6s;
 }
 
-.navegadorA :after{
+.navegadorA :after {
     left: 0;
     bottom: -10px;
     color: rgb(253, 76, 130);
 }
 
-.navegadorA :before{
+.navegadorA :before {
     right: 0;
     top: -10%;
 }
 
-.navegadorA :hover:after, .navegadorA :hover:before{
-    width: 100%;     
+.navegadorA :hover:after,
+.navegadorA :hover:before {
+    width: 100%;
 }
+
 /*--------------------------------*/
 
 /*FONDO DE CADA SECCION*/
-.fondoSeccion{
+.fondoSeccion {
     background-color: rgba(63, 47, 47, 0.3);
 }
+
 /*-----------------------------------------------*/
 /*FOOTER*/
-.tamañoRedes{
+.tamañoRedes {
     width: 2.5vw;
     height: 2.5vw;
     margin: 1em 2em 1em 2em;
 }
-.derechos{
+
+.derechos {
     margin: auto;
     font-size: 1.6rem;
 }
@@ -78,59 +93,155 @@ html{
     bottom: 20px;
     right: 30px;
 }
+
 /*----------------------------------------------------*/
 /*Carousel y relleno de pagina*/
-.carousel{
+.carousel {
     height: 60vh;
-    width: 100%;  
+    width: 100%;
 }
 
-.fuentePagina{
+.fuentePagina {
     font-size: 2rem;
     font-family: 'Open Sans', sans-serif;
     color: rgb(139, 59, 139);
-    
+
 
 }
- .fuenteBella{
+
+.fuenteBella {
     color: violet;
     font-family: 'Bebas Neue', cursive;
     text-shadow: -3px -3px 0 rgb(0, 0, 0);
 }
-.fuenteBella h1{
+
+.fuenteBella h1 {
     font-size: 5rem;
 }
+
 .contenedor-section {
     max-width: 90vw;
-  }
-  
-  .contenedor-section p {
+}
+
+.contenedor-section p {
     word-wrap: break-word;
-  }
+}
+
 /*-----------------------------------------------------------------------------------------------------------*/
 /*TENDENCIAS*/
 /*IMAGENES*/
 
-.imagenUñas{
+.imagenUñas {
     width: auto;
     height: 50vh;
     object-fit: cover;
 }
-.boton{
+
+.boton {
     border: solid 1px violet;
     border-radius: 10%;
     margin-left: 100%;
     margin-right: 100%;
 }
-.boton a{
+
+.boton a {
     color: rgb(175, 54, 175);
     text-decoration: none;
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
 
 }
-.descrip{
+
+.descrip {
     color: rgb(167, 27, 167);
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
+}
+
+/*NOSOTROS*/
+/*------------------------------------------------------*/
+.contDivs {
+    display: grid;
+    grid-template-areas:
+        "divUno divUno"
+        "divDos divTres";
+    gap: 20px;
+    border: solid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 70% 28%;
+
+
+}
+
+.divUno {
+    grid-area: divUno;
+    margin-top: 5em;
+    margin-bottom: 3em;
+    border: solid red;
+}
+
+.divDos {
+    grid-area: divDos;
+    border: solid 3px blue;
+    width: 100%;
+
+}
+
+.divDos video {
+    width: 100%;
+
+}
+
+.divTres {
+    grid-area: divTres;
+    padding-top: 100px;
+    padding-bottom: 1px;
+    border: solid green;
+}
+
+
+.fuenteBellaDos {
+    color: violet;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: -3px -3px 0 rgb(0, 0, 0);
+}
+
+.fuenteBellaDos h1 {
+    font-size: 5rem;
+}
+
+/*--------------MEDIAS----------------------------------------*/
+
+@media (max-width: 440px) {
+    .contDivs {
+        display: grid;
+        grid-template-areas:
+            "divUno"
+            "divDos"
+            "divTres";
+        gap: 10px;
+        border: solid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 100% 10%;
+    }
+    .divUno{
+        padding:5%;
+    }
+    .divUno h1 { 
+        font-size: 5rem;
+    }
+    
+    .divTres{
+        padding: 5%;
+    }
+
+    .botonWhatsApp {
+        display: none;
+    }
+
+    .tamañoRedes {
+        width: 70px;
+        height: 70px;
+        margin: 1em 2em 1em 2em;
+    }
 }
