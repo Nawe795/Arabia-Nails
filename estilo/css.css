@@ -16,23 +16,40 @@ html{
 }
 /*--------------------------------*/
 /*INICIO-NOSOTROS-TENDENCIAS-SUCURSALES-CONTACTOS*/
-.fuenteNavegacion{
-    color: black;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 1.7rem;
 
+/*-----------------------------------------------------------------*/
+.navegadorA{
+    position: relative;
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+    letter-spacing: .5px;
+    padding: 0 20px;
+    cursor: pointer;
 }
-.items{
-     border: black .1rem ridge;
-     margin: 1em;
-     border-radius: 10%;
+
+.navegadorA :before, .navegadorA :after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0px;
+    background-color: rgb(253, 76, 130);
+    transition: .6s;   
 }
-.items :hover{
-    color: white;
+
+.navegadorA :after{
+    left: 0;
+    bottom: -10px;
+    color: rgb(253, 76, 130);
 }
-.fixed{
-    position: fixed;
-    z-index: 9999;
+
+.navegadorA :before{
+    right: 0;
+    top: -10%;
+}
+
+.navegadorA :hover:after, .navegadorA :hover:before{
+    width: 100%;     
 }
 /*--------------------------------*/
 
@@ -65,8 +82,7 @@ html{
 /*Carousel y relleno de pagina*/
 .carousel{
     height: 60vh;
-    width: auto;
-    object-fit: contain;
+    width: 100%;  
 }
 
 .fuentePagina{
