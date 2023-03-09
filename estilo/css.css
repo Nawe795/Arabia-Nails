@@ -166,7 +166,6 @@ html {
         "divUno divUno"
         "divDos divTres";
     gap: 20px;
-    border: solid;
     grid-template-rows: 1fr 4fr;
     grid-template-columns: 70% 28%;
 
@@ -177,12 +176,10 @@ html {
     grid-area: divUno;
     margin-top: 5em;
     margin-bottom: 3em;
-    border: solid red;
 }
 
 .divDos {
     grid-area: divDos;
-    border: solid 3px blue;
     width: 100%;
 
 }
@@ -196,7 +193,6 @@ html {
     grid-area: divTres;
     padding-top: 100px;
     padding-bottom: 1px;
-    border: solid green;
 }
 
 
@@ -210,28 +206,88 @@ html {
     font-size: 5rem;
 }
 
-/*--------------MEDIAS----------------------------------------*/
+/*SUCURSALES*/
+/*--------------------------------------------*/
+.contDeSection {
+    display: grid;
+    grid-template-areas:
+        "contTituloSucursales contTituloSucursales"
+        "contDeMapa contDeParrafo";
+    gap: 20px;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 70% 28%;
+    
+}
+
+.contTituloSucursales {
+    grid-area: contTituloSucursales;
+    color: violet;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: -3px -3px 0 rgb(0, 0, 0);
+    
+}
+
+.contTituloSucursales h1 {
+    font-size: 5rem;
+}
+
+.contDeMapa {
+    grid-area: contDeMapa;
+    
+}
+
+.mapa {
+    width: 100%;
+}
+
+.contDeParrafo {
+    grid-area: contDeParrafo;
+    
+}
+
+.contDeParrafo p {
+    color: rgb(167, 27, 167);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.contDeParrafo h2 {
+    text-align: center;
+    color: rgb(77, 12, 77);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.5rem;
+}
+
+.contDeParrafo h3 {
+    text-align: center;
+    color: rgb(77, 12, 77);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.5rem;
+}
+
+/*--------------MEDIAS DE NOSOTROS----------------------------------------*/
 
 @media (max-width: 440px) {
-    .contDivs {
+    .contDeSection {
         display: grid;
         grid-template-areas:
             "divUno"
             "divDos"
             "divTres";
         gap: 10px;
-        border: solid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 100% 10%;
     }
-    .divUno{
-        padding:5%;
+
+    .divUno {
+        padding: 5%;
     }
-    .divUno h1 { 
+
+    .divUno h1 {
         font-size: 5rem;
     }
-    
-    .divTres{
+
+    .divTres {
         padding: 5%;
     }
 
@@ -244,4 +300,40 @@ html {
         height: 70px;
         margin: 1em 2em 1em 2em;
     }
+
+}
+
+/*---------------------MEDIAS DE SUCURSALES--------------------*/
+
+@media (max-width: 768px) {
+    .contDeSection {
+        grid-template-areas:
+            "contTituloSucursales"
+            "contDeMapa"
+            "contDeParrafo";
+        grid-template-rows: 0.3fr 1fr 0.7fr;
+        grid-template-columns: 100%;
+    }
+    .contTituloSucursales h1{
+        padding-left: 14%;
+        
+        
+    }
+    .contDeParrafo h2,
+    .contDeParrafo h3 {
+        font-size: 2.5rem;
+    }
+    .mapa {
+        width: 100%;
+    }
+    .tamañoRedes {
+        width: 70px;
+        height: 70px;
+        margin: 1em 2em 1em 2em;
+    }
+    .botonWhatsApp {
+        display: none;
+    }
+
+
 }
