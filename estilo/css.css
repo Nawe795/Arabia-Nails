@@ -117,6 +117,7 @@ html {
 
 .fuenteBella h1 {
     font-size: 5rem;
+
 }
 
 .contenedor-section {
@@ -168,8 +169,6 @@ html {
     gap: 20px;
     grid-template-rows: 1fr 4fr;
     grid-template-columns: 70% 28%;
-
-
 }
 
 .divUno {
@@ -185,7 +184,8 @@ html {
 }
 
 .divDos video {
-    width: 100%;
+    width: 80%;
+    height: 70vh;
 
 }
 
@@ -283,8 +283,9 @@ html {
     text-shadow: -3px -3px 0 rgb(0, 0, 0);
 }
 
+
 .Titulo-Contactos h1 {
-    font-size: 5vw;
+    font-size: 5rem;
     text-align: center;
 }
 
@@ -388,41 +389,7 @@ html {
 
 /*--------------MEDIAS DE NOSOTROS----------------------------------------*/
 
-@media (max-width: 440px) {
-    .contDeSection {
-        display: grid;
-        grid-template-areas:
-            "divUno"
-            "divDos"
-            "divTres";
-        gap: 10px;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 100% 10%;
-    }
 
-    .divUno {
-        padding: 5%;
-    }
-
-    .divUno h1 {
-        font-size: 5rem;
-    }
-
-    .divTres {
-        padding: 5%;
-    }
-
-    .botonWhatsApp {
-        display: none;
-    }
-
-    .tamañoRedes {
-        width: 70px;
-        height: 70px;
-        margin: 1em 2em 1em 2em;
-    }
-
-}
 
 /*---------------------MEDIAS DE SUCURSALES--------------------*/
 
@@ -461,6 +428,7 @@ html {
         display: none;
     }
     .Contenedor-General {
+        
         display: grid;
         grid-template-areas:
             "Titulo-Contactos"
@@ -468,6 +436,7 @@ html {
             "Contenedor-Imagen"
             "Contenedor-Parrafo";
         gap: 10px; }
+        
 
     .Contenedor-Imagen{
         display: none;
@@ -478,7 +447,62 @@ html {
         grid-area: Contenedor-Formulario;
         width: 100%;
         border-radius: 15px;
+        
     }
+    .input-box{
+        width: 100%;
+    }
+
+
+
+    @media (max-width: 700px) {
+        .contDivs {
+            display: grid;
+            grid-template-areas:
+                "divUno"
+                "divDos"
+                "divTres";
+            gap: 10px;
+            grid-template-rows: 1fr;
+            grid-template-columns: 100% 10%;
+        }
+    
+        
+    
+       .divUno h1{
+        font-size: 4rem;
+        border: solid;
+       }
+
+
+
+        .divDos video{
+            
+            border: solid green;
+            width: 100%;
+            height: auto;
+            
+        }
+    
+        .divTres {
+            border: solid gold;
+            padding: 5%;
+        }
+    
+        .botonWhatsApp {
+            display: none;
+        }
+    
+        .tamañoRedes {
+            width: 70px;
+            height: 70px;
+            margin: 1em 2em 1em 1em;
+        }
+    
+    }
+
+   
+
     
     
 
