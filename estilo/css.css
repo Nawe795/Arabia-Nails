@@ -216,7 +216,7 @@ html {
     gap: 20px;
     grid-template-rows: 1fr 4fr;
     grid-template-columns: 70% 28%;
-    
+
 }
 
 .contTituloSucursales {
@@ -224,7 +224,7 @@ html {
     color: violet;
     font-family: 'Bebas Neue', cursive;
     text-shadow: -3px -3px 0 rgb(0, 0, 0);
-    
+
 }
 
 .contTituloSucursales h1 {
@@ -233,7 +233,7 @@ html {
 
 .contDeMapa {
     grid-area: contDeMapa;
-    
+
 }
 
 .mapa {
@@ -242,7 +242,7 @@ html {
 
 .contDeParrafo {
     grid-area: contDeParrafo;
-    
+
 }
 
 .contDeParrafo p {
@@ -264,6 +264,127 @@ html {
     font-family: 'Open Sans', sans-serif;
     font-size: 3.5rem;
 }
+
+/*---------------------------------------------------------*/
+/*CONTACTOS*/
+.Contenedor-General {
+    display: grid;
+    grid-template-areas:
+        "Titulo-Contactos Titulo-Contactos"
+        "Contenedor-Formulario Contenedor-Imagen"
+        "Contenedor-Formulario Contenedor-Parrafo";
+    gap: 10px; 
+}
+
+.Titulo-Contactos {
+    grid-area: Titulo-Contactos;
+    color: violet;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: -3px -3px 0 rgb(0, 0, 0);
+}
+
+.Titulo-Contactos h1 {
+    font-size: 5vw;
+    text-align: center;
+}
+
+.Contenedor-Formulario {
+    display: grid;
+    grid-area: Contenedor-Formulario;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.Formulario {
+    border: rgb(167, 27, 167) solid;
+    border-radius: 5%;
+    transition: 0.5s;
+    padding: 3em 3em;
+
+}
+
+.Formulario:hover {
+    border: 1px solid rgb(167, 27, 167);
+    box-shadow: 0 0 20px rgb(167, 27, 167),
+        inset 0 0 20px rgb(167, 27, 167);
+}
+
+.rellenoItems {
+    background-color: antiquewhite;
+    color: black;
+    font-size: 2rem;
+    border: none;
+}
+
+.textarea {
+    width: 100%;
+}
+
+.input-box {
+    position: relative;
+    width: 320px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    border-radius: 7px;
+    background: transparent;
+    border: 1px solid rgb(187, 88, 117);
+    outline: none;
+    font-size: 2em;
+    color: black;
+    padding: 0 1px 0 3px;
+    transition: 0.5s;
+}
+
+.Formulario:hover .input-box input {
+    border: 2px solid rgb(251, 86, 135);
+    box-shadow: 0 0 10px rgb(251, 86, 135),
+        inset 0 0 10px rgb(251, 86, 135);
+}
+
+.item {
+    font-size: 1.5rem;
+}
+
+.Boton {
+
+    width: 100%;
+    height: 45px;
+    background: rgb(251, 86, 135);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.8em;
+    transition: 0.5s;
+}
+
+.Contenedor-Formulario:hover .Boton {
+    background: rgb(251, 86, 135);
+}
+
+.Contenedor-Parrafo {
+    grid-area: Contenedor-Parrafo;
+}
+
+.Contenedor-Parrafo p {
+    font-size: 2em;
+}
+
+.Contenedor-Imagen {
+    display: grid;
+    grid-area: Contenedor-Imagen;
+    place-items: center;
+}
+
+.Contenedor-Imagen img {
+    width: 40vw;
+    height: 30vh;
+}
+
+/*--------------------------------------------------------------------*/
 
 /*--------------MEDIAS DE NOSOTROS----------------------------------------*/
 
@@ -314,26 +435,51 @@ html {
         grid-template-rows: 0.3fr 1fr 0.7fr;
         grid-template-columns: 100%;
     }
-    .contTituloSucursales h1{
+
+    .contTituloSucursales h1 {
         padding-left: 14%;
-        
-        
+
+
     }
+
     .contDeParrafo h2,
     .contDeParrafo h3 {
         font-size: 2.5rem;
     }
+
     .mapa {
         width: 100%;
     }
+
     .tamañoRedes {
         width: 70px;
         height: 70px;
         margin: 1em 2em 1em 2em;
     }
+
     .botonWhatsApp {
         display: none;
     }
+    .Contenedor-General {
+        display: grid;
+        grid-template-areas:
+            "Titulo-Contactos"
+            "Contenedor-Formulario"
+            "Contenedor-Imagen"
+            "Contenedor-Parrafo";
+        gap: 10px; }
 
+    .Contenedor-Imagen{
+        display: none;
+    }
+    .Contenedor-Formulario {
+        display: grid;
+        place-items: center;
+        grid-area: Contenedor-Formulario;
+        width: 100%;
+        border-radius: 15px;
+    }
+    
+    
 
 }
