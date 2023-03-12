@@ -1,0 +1,31 @@
+.contDivs {
+	display: grid;
+	grid-template-areas: "divUno divUno" "divDos divTres";
+	gap: 20px;
+	grid-template-rows: 1fr 4fr;
+	grid-template-columns: 70% 28%;
+}
+.divUno {
+	grid-area: divUno;
+	margin-top: 5em;
+	margin-bottom: 3em;
+}
+.divDos {
+	grid-area: divDos;
+	width: 100%;
+	video {
+		width: 80%;
+		height: 70vh;
+	}
+}
+.divTres {
+	grid-area: divTres;
+	padding-top: 100px;
+	padding-bottom: 1px;
+}
+.fuenteBellaDos {
+	@include fuenteBonita;
+	h1 {
+		font-size: 5rem;
+	}
+}

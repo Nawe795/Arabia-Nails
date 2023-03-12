@@ -1,0 +1,40 @@
+.contDeSection {
+	display: grid;
+	grid-template-areas: "contTituloSucursales contTituloSucursales" "contDeMapa contDeParrafo";
+	gap: 20px;
+	grid-template-rows: 1fr 4fr;
+	grid-template-columns: 70% 28%;
+}
+.contTituloSucursales {
+	grid-area: contTituloSucursales;
+	@include fuenteBonita;
+	h1 {
+		font-size: 5rem;
+	}
+}
+.contDeMapa {
+	grid-area: contDeMapa;
+}
+.mapa {
+	width: 100%;
+}
+.contDeParrafo {
+	grid-area: contDeParrafo;
+	p {
+		color: $color_5;
+		font-family: $font-family_1;
+		font-size: 2rem;
+	}
+	h2 {
+		text-align: center;
+		color: $color_6;
+		font-family: $font-family_1;
+		font-size: 3.5rem;
+	}
+	h3 {
+		text-align: center;
+		color: $color_6;
+		font-family: $font-family_1;
+		font-size: 3.5rem;
+	}
+}

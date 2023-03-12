@@ -1,0 +1,22 @@
+.imagenUñas {
+	width: auto;
+	height: 50vh;
+	object-fit: cover;
+}
+.boton {
+	border: solid 1px violet;
+	border-radius: 10%;
+	margin-left: 100%;
+	margin-right: 100%;
+	a {
+		color: $color_4;
+		text-decoration: none;
+		font-family: $font-family_2;
+		font-size: 2rem;
+	}
+}
+.descrip {
+	color: $color_5;
+	font-family: $font-family_1;
+	font-size: 1.3rem;
+}

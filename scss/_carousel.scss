@@ -1,0 +1,28 @@
+/*MIXIN ESTILO DE FUENTE*/
+@mixin fuenteBonita{
+	color: $color_3;
+	font-family: $font-family_2;
+	text-shadow: -3px -3px 0 rgb(0, 0, 0);
+}
+.carousel {
+	height: 60vh;
+	width: 100%;
+}
+.fuentePagina {
+	font-size: 2rem;
+	font-family: $font-family_1;
+	color: $color_2;
+}
+.fuenteBella {
+	@include fuenteBonita;
+	h1 {
+		font-size: 5rem;
+	}
+}
+.contenedor-section {
+	max-width: 90vw;
+	p {
+		word-wrap: break-word;
+	}
+}
+

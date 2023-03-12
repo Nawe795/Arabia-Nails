@@ -1,0 +1,110 @@
+@media (max-width: 768px) {
+    .contDeSection {
+        grid-template-areas:
+            "contTituloSucursales"
+            "contDeMapa"
+            "contDeParrafo";
+        grid-template-rows: 0.3fr 1fr 0.7fr;
+        grid-template-columns: 100%;
+    }
+
+    .contTituloSucursales h1 {
+        padding-left: 14%;
+
+
+    }
+
+    .contDeParrafo h2,
+    .contDeParrafo h3 {
+        font-size: 2.5rem;
+    }
+
+    .mapa {
+        width: 100%;
+    }
+
+    .tamañoRedes {
+        width: 70px;
+        height: 70px;
+        margin: 1em 2em 1em 2em;
+    }
+
+    .botonWhatsApp {
+        display: none;
+    }
+    .Contenedor-General {
+        
+        display: grid;
+        grid-template-areas:
+            "Titulo-Contactos"
+            "Contenedor-Formulario"
+            "Contenedor-Imagen"
+            "Contenedor-Parrafo";
+        gap: 10px; }
+        
+
+    .Contenedor-Imagen{
+        display: none;
+    }
+    .Contenedor-Formulario {
+        display: grid;
+        place-items: center;
+        grid-area: Contenedor-Formulario;
+        width: 100%;
+        border-radius: 15px;
+        
+    }
+    .input-box{
+        width: 100%;
+    }
+
+
+
+    @media (max-width: 700px) {
+        .contDivs {
+            display: grid;
+            grid-template-areas:
+                "divUno"
+                "divDos"
+                "divTres";
+            gap: 10px;
+            grid-template-rows: 1fr;
+            grid-template-columns: 100% 10%;
+        }
+
+    
+        
+    
+       .divUno h1{
+        font-size: 4rem;
+       }
+
+
+
+        .divDos video{
+            
+            
+            width: 100%;
+            height: auto;
+            
+        }
+    
+        .divTres {
+            
+            padding: 5%;
+        }
+    
+        .botonWhatsApp {
+            display: none;
+        }
+    
+        .tamañoRedes {
+            width: 70px;
+            height: 70px;
+            margin: 1em 2em 1em 1em;
+        }
+    
+    }
+
+
+}

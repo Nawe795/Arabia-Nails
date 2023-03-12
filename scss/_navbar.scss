@@ -1,0 +1,39 @@
+.navegador {
+	padding-left: 40px;
+	padding-bottom: 1px;
+}
+.navegadorA {
+	position: relative;
+	text-decoration: none;
+	font-size: 18px;
+	letter-spacing: .5px;
+	&:before {
+		content: "";
+		position: absolute;
+		height: 5px;
+		width: 0px;
+		background-color: $background-color_1;
+		transition: .6s;
+		right: 0;
+		top: -10%;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		height: 5px;
+		width: 0px;
+		background-color: $background-color_1;
+		transition: .6s;
+		left: 0;
+		bottom: -10px;
+		color: $color_1;
+	}
+	&:hover {
+		&:after {
+			width: 100%;
+		}
+		&:before {
+			width: 100%;
+		}
+	}
+}
